@@ -40,6 +40,7 @@ h1{
     background-image: url(imagens/basebg.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: bottom;
     font-size: 40px;
     font-family: "Edu VIC WA NT Hand", cursive;
     padding: 20px;
