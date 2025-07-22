@@ -1,0 +1,421 @@
+body{
+    background-color: #111111;
+    scroll-behavior: smooth;
+    margin: 0px;
+    background-image: url(imagens/bg.png);
+}
+
+/* Letras e fontes */
+.titulo1{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    padding: 5px;
+    padding-bottom: 7px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255,0.75);
+    margin-top: 30px;
+}
+
+.titulo2{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255,0.75);
+}
+
+h1{
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255,0.75);
+    margin: 0px;
+}
+
+.nome{
+    text-align: center;
+    color: #ffffff;
+    background-image: url(imagens/basebg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 40px;
+    font-family: "Edu VIC WA NT Hand", cursive;
+    padding: 20px;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255,0.75);
+    height: 130px;
+}
+
+.texto{
+    font-family: "Charm", cursive;
+    padding: 0px 20px 0px 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 320px;
+    margin: auto;
+    text-align: justify;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+/* Instagram */
+.insta{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 320px;
+    margin: auto;
+    background-color: #0c0c0c;
+    border-radius: 20px;
+}
+
+.perfil{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+img.fp{
+    width: 40px;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.inf{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.inf2{
+    margin-top: 7px;
+    color: #e4e4e4;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 150;
+}
+
+.foto{
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.foto > .ft{
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+/* Tempo juntos */
+.contador{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 320px;
+    margin: auto;
+    background-color: #0c0c0c;;
+    border-radius: 20px;
+}
+
+.contadora{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contadorb{
+    display: flex;
+    justify-content: center;
+}
+
+.caixa{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255,0.3);
+    width: 30%;
+}
+
+.num{
+    font-size: 36px;
+    margin-top: -35px;
+}
+
+.data{
+    font-size: 24px;
+    margin-top: -40px;
+    margin-bottom: 10px;
+}
+
+.caixam{
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    text-shadow: 0px 0px 7px rgba(255, 255, 255,0.3);
+    width: 100%;
+}
+
+.container {
+font-size: 0.5em;
+width: 40em;
+height: 40em;
+position: relative;
+}
+
+.sun {
+position: absolute;
+top: 15em;
+left: 15em;
+width: 10em;
+height: 10em;
+background-color: yellow;
+border-radius: 50%;
+box-shadow: 0 0 3em white;
+}
+
+.earth, .moon {
+position: absolute;
+border-style: solid;
+border-color: white transparent transparent transparent;
+border-width: 0.1em 0.1em 0 0;
+border-radius: 50%;
+}
+
+.earth {
+top: 5em;
+left: 5em;
+width: 30em;
+height: 30em;
+animation: orbit 36.5s linear infinite;
+}
+
+.moon {
+top: 0;
+right: 0;
+width: 8em;
+height: 8em;
+animation: orbit 2.7s linear infinite;
+}
+
+.earth::before,
+.moon::before {
+content: '';
+position: absolute;
+border-radius: 50%;
+}
+
+.earth::before {
+top: 2.8em;
+right: 2.8em;
+width: 3em;
+height: 3em;
+background-color: rgb(0, 110, 255);
+}
+
+.moon::before {
+top: 0.8em;
+right: 0.2em;
+width: 1.2em;
+height: 1.2em;
+background-color: silver;
+}
+
+@keyframes orbit {
+to {
+transform: rotate(360deg);
+}
+}
+
+/* Spotify */
+img.musica{
+    padding-bottom: 30px;
+    padding-top: 40px;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+.icon{
+    width: 25px;
+    padding: 2px;
+}
+
+.track-list {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.custom-player {
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 320px;
+  margin: auto;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 20px;
+}
+
+.track-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.track-cover {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 15px;
+}
+
+.track-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.track-artist {
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+}
+
+.tempo {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#play-pause {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#current-time, #duration {
+  font-size: 11px;
+}
+
+.plays{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+
+img.plays{
+    width: 7%;
+    height: 7%;
+    margin-top: 20px;
+}
+
+#playPauseBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+#playPauseIcon {
+  width: 50%;
+}
+
+#seek-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #404040;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+#seek-bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background: #1db954;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  margin-top: -5px;
+}
+
+#seek-bar::-moz-range-thumb {
+  height: 16px;
+  width: 16px;
+  background: #1db954;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+#seek-bar::-webkit-slider-runnable-track {
+  height: 5px;
+  background: linear-gradient(to right, #1db954 var(--value), #404040 var(--value));
+  border-radius: 3px;
+}
+
+#seek-bar::-moz-range-track {
+  height: 6px;
+  background: #1db954;
+  border-radius: 3px;
+}
+
+#lyrics-container {
+  font-size: 15px;
+  font-weight: 900;
+  margin-top: 30px;
+  height: 300px;
+  overflow: scroll;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  margin: 4px 0;
+  background-color: #272727;
+  border-radius: 15px;
+  padding: 25px;
+  line-height: 2;
+  box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.75);
+  overflow-x: hidden
+}
+
+/* Editando a barra do Scroll */
+
+::-webkit-scrollbar {
+  width: 7px;
+  opacity: 0%;
+}
