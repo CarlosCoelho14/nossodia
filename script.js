@@ -111,3 +111,24 @@ audio.addEventListener('timeupdate', () => {
   // Altera visual da barra com gradiente direto no input
   seekBar.style.background = `linear-gradient(to right, #1db954 ${percentage}%, #404040 ${percentage}%)`;
 });
+
+  // Volume
+const volumeSlider = document.getElementById('volume-slider');
+const volumeIcon = document.getElementById('volume-icon');
+
+volumeSlider.addEventListener('input', () => {
+  const volume = volumeSlider.value;
+  audio.volume = volume;
+
+  // Atualiza o ícone com base no volume
+  if (volume == 0) {
+    volumeIcon.src = 'imagens/mute.png';
+  } else if (volume < 0.4) {
+    volumeIcon.src = 'imagens/baixo.png';
+  } else if (volume < 0.7) {
+    volumeIcon.src = 'imagens/medio.png';
+  } else {
+    volumeIcon.src = 'imagens/alto.png';
+  }
+});
+
